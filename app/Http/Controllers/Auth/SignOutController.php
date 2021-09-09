@@ -7,5 +7,8 @@ use Illuminate\Http\Request;
 
 class SignOutController extends Controller
 {
-    //
+    public function __invoke()
+    {
+        auth()->logout();
+    }
 }
